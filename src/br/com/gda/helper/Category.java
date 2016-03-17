@@ -1,7 +1,7 @@
 package br.com.gda.helper;
 
 import java.util.ArrayList;
-
+//Teste segundo commit
 public class Category {
 
 	private Integer codCategory;
