@@ -4,6 +4,7 @@ public class Customer extends Person {
 
 	private Long codCustomer;
 	private String recordMode;
+	private String codPayment;
 
 	public Long getCodCustomer() {
 		return codCustomer;
@@ -19,6 +20,14 @@ public class Customer extends Person {
 
 	public void setRecordMode(String recordMode) {
 		this.recordMode = recordMode;
+	}
+
+	public String getCodPayment() {
+		return codPayment;
+	}
+
+	public void setCodPayment(String codPayment) {
+		this.codPayment = codPayment;
 	}
 
 }
