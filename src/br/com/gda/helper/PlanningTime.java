@@ -24,6 +24,7 @@ public class PlanningTime {
 	private Long number;
 	private Integer part;
 	private Integer rate;
+	private String reservedNum;
 	
 	public PlanningTime() {
 		
@@ -183,6 +184,14 @@ public class PlanningTime {
 
 	public void setRate(Integer rate) {
 		this.rate = rate;
+	}
+
+	public String getReservedNum() {
+		return reservedNum;
+	}
+
+	public void setReservedNum(String reservedNum) {
+		this.reservedNum = reservedNum;
 	}
 
 }

@@ -22,6 +22,7 @@ public class Store {
 	private String recordMode;
 	private ArrayList<MaterialStore> material = new ArrayList<MaterialStore>();
 	private ArrayList<StoreEmployee> employee = new ArrayList<StoreEmployee>();
+	private String codPayment;
 
 	public Long getCodOwner() {
 		return codOwner;
@@ -165,6 +166,14 @@ public class Store {
 
 	public void setEmployee(ArrayList<StoreEmployee> employee) {
 		this.employee = employee;
+	}
+
+	public String getCodPayment() {
+		return codPayment;
+	}
+
+	public void setCodPayment(String codPayment) {
+		this.codPayment = codPayment;
 	}
 
 }

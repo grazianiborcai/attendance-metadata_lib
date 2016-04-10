@@ -10,7 +10,7 @@ public class Reserve {
 	private Long codCustomer;
 	private String payId;
 	private LocalDateTime reservedTime;
-	private Long reservedNum;
+	private String reservedNum;
 
 	public Long getNumber() {
 		return number;
@@ -60,11 +60,11 @@ public class Reserve {
 		this.reservedTime = reservedTime;
 	}
 
-	public Long getReservedNum() {
+	public String getReservedNum() {
 		return reservedNum;
 	}
 
-	public void setReservedNum(Long reservedNum) {
+	public void setReservedNum(String reservedNum) {
 		this.reservedNum = reservedNum;
 	}
 
