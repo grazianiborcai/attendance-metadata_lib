@@ -25,11 +25,12 @@ public class PlanningTime {
 	private Integer part;
 	private Integer rate;
 	private String reservedNum;
-	
+	private String payId;
+
 	public PlanningTime() {
-		
+
 	}
-	
+
 	public PlanningTime(PlanningTime planningTime) {
 		this.setCodOwner(planningTime.getCodOwner());
 		this.setCodStore(planningTime.getCodStore());
@@ -192,6 +193,14 @@ public class PlanningTime {
 
 	public void setReservedNum(String reservedNum) {
 		this.reservedNum = reservedNum;
+	}
+
+	public String getPayId() {
+		return payId;
+	}
+
+	public void setPayId(String payId) {
+		this.payId = payId;
 	}
 
 }

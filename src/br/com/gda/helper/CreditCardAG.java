@@ -1,27 +1,19 @@
 package br.com.gda.helper;
 
-public class CreditCardAG {
+import moip.sdk.api.CreditCard;
 
-	private Long codCard;
-	private String hash;
+public class CreditCardAG extends CreditCard {
+
+	private Long codCustomer;
 	private String last4;
 	private String brand;
-	private HolderAG holder;
 
-	public Long getCodCard() {
-		return codCard;
+	public Long getCodCustomer() {
+		return codCustomer;
 	}
 
-	public void setCodCard(Long codCard) {
-		this.codCard = codCard;
-	}
-
-	public String getHash() {
-		return hash;
-	}
-
-	public void setHash(String hash) {
-		this.hash = hash;
+	public void setCodCustomer(Long codCustomer) {
+		this.codCustomer = codCustomer;
 	}
 
 	public String getLast4() {
@@ -40,18 +32,11 @@ public class CreditCardAG {
 		this.brand = brand;
 	}
 
-	public HolderAG getHolder() {
-		return holder;
-	}
-
-	public void setHolder(HolderAG holder) {
-		this.holder = holder;
-	}
-
 	public boolean isComplete() {
-		return hash != null && last4 != null && brand != null && holder != null && holder.getFullname() != null
-				&& holder.getBirthdate() != null && holder.getTaxDocument() != null
-				&& holder.getTaxDocument().getType() != null && holder.getTaxDocument().getNumber() != null;
+		return getHash() != null && getLast4() != null && getBrand() != null && getHolder() != null
+				&& getHolder().getFullname() != null && getHolder().getBirthDate() != null
+				&& getHolder().getTaxDocument() != null && getHolder().getTaxDocument().getType() != null
+				&& getHolder().getTaxDocument().getNumber() != null;
 	}
 
 }
