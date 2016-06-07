@@ -11,6 +11,9 @@ public class PayCart {
 	private ArrayList<PlanningTime> planningTime = new ArrayList<PlanningTime>();
 
 	public CreditCard getCreditCard() {
+		String bDate = creditCard.getHolder().getBirthDate();
+		if (bDate != null && !bDate.isEmpty())
+			creditCard.getHolder().setBirthdate(bDate);
 		return creditCard;
 	}
 

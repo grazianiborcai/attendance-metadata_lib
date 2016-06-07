@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Weekday {
 
-	private Integer weekday;
-	private ArrayList<WeekdayText> weekdayText = new ArrayList<WeekdayText>();
+	public Integer weekday;
+	public ArrayList<WeekdayText> weekdayText = new ArrayList<WeekdayText>();
 
 	public Integer getWeekday() {
 		return weekday;
