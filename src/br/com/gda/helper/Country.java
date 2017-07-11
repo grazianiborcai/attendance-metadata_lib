@@ -1,12 +1,10 @@
 package br.com.gda.helper;
 
-import java.util.ArrayList;
-
-public class Country {
+public class CountryText {
 
 	private String country;
-	private ArrayList<CountryText> countryText = new ArrayList<CountryText>();
-	private ArrayList<State> state = new ArrayList<State>();
+	private String language;
+	private String name;
 
 	public String getCountry() {
 		return country;
@@ -16,20 +14,20 @@ public class Country {
 		this.country = country;
 	}
 
-	public ArrayList<CountryText> getCountryText() {
-		return countryText;
+	public String getLanguage() {
+		return language;
 	}
 
-	public void setCountryText(ArrayList<CountryText> countryText) {
-		this.countryText = countryText;
+	public void setLanguage(String language) {
+		this.language = language;
 	}
 
-	public ArrayList<State> getState() {
-		return state;
+	public String getName() {
+		return name;
 	}
 
-	public void setState(ArrayList<State> state) {
-		this.state = state;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }
