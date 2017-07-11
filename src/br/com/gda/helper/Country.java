@@ -1,33 +1,24 @@
 package br.com.gda.helper;
 
-public class CountryText {
+public class Country {
 
-	private String country;
-	private String language;
-	private String name;
+	private String countryID;
+	private String countryDesc;
 
-	public String getCountry() {
-		return country;
+	public String getCountryID() {
+		return countryID;
 	}
 
-	public void setCountry(String country) {
-		this.country = country;
+	public void setCountryID(String countryID) {
+		this.countryID = countryID;
 	}
 
-	public String getLanguage() {
-		return language;
+	public String getCountryDesc() {
+		return countryDesc;
 	}
 
-	public void setLanguage(String language) {
-		this.language = language;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
+	public void setCountryDesc(String countryDesc) {
+		this.countryDesc = countryDesc;
 	}
 
 }
