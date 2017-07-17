@@ -1,4 +1,4 @@
-package br.com.gda.helper;
+package br.com.mind5.helper;
 
 public class Country {
 

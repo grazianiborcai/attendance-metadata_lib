@@ -1,33 +1,24 @@
-package br.com.gda.helper;
+package br.com.mind5.helper;
 
-public class WeekdayText {
+public class Weekday {
 
-	private Integer weekday;
-	private String language;
-	private String name;
+	private Integer weekdayID;
+	private String weekDesc;
 
-	public Integer getWeekday() {
-		return weekday;
+	public Integer getWeekdayID() {
+		return weekdayID;
 	}
 
-	public void setWeekday(Integer weekday) {
-		this.weekday = weekday;
+	public void setWeekdayID(Integer weekdayID) {
+		this.weekdayID = weekdayID;
 	}
 
-	public String getLanguage() {
-		return language;
+	public String getWeekDesc() {
+		return weekDesc;
 	}
 
-	public void setLanguage(String language) {
-		this.language = language;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
+	public void setWeekDesc(String weekDesc) {
+		this.weekDesc = weekDesc;
 	}
 
 }

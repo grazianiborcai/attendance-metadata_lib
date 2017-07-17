@@ -1,33 +1,24 @@
-package br.com.gda.helper;
+package br.com.mind5.helper;
 
-public class GenderText {
+public class Gender {
 
-	private Integer codGender;
-	private String language;
-	private String name;
+	private Integer genderID;
+	private String genderDesc;
 
-	public Integer getCodGender() {
-		return codGender;
+	public Integer getGenderID() {
+		return genderID;
 	}
 
-	public void setCodGender(Integer codGender) {
-		this.codGender = codGender;
+	public void setGenderID(Integer genderID) {
+		this.genderID = genderID;
 	}
 
-	public String getLanguage() {
-		return language;
+	public String getGenderDesc() {
+		return genderDesc;
 	}
 
-	public void setLanguage(String language) {
-		this.language = language;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
+	public void setGenderDesc(String genderDesc) {
+		this.genderDesc = genderDesc;
 	}
 
 }
