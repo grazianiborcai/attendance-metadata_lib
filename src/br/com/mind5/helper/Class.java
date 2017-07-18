@@ -7,6 +7,7 @@ public class Class {
 
 	private Long classID;
 	private Place place;
+	private String name;
 	private LocalTime beginTime;
 	private Integer duration;
 	private LocalTime endTime;
@@ -29,6 +30,14 @@ public class Class {
 
 	public void setPlace(Place place) {
 		this.place = place;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public LocalTime getBeginTime() {
