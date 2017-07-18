@@ -18,12 +18,7 @@
 		</plugins>
 	</build>
 	<dependencies>
-		<dependency>
-			<groupId>Moip-Mind5-SDK</groupId>
-			<artifactId>Moip-Mind5-SDK</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-			<scope>compile</scope>
-		</dependency>
+
 
 	</dependencies>
 </project>

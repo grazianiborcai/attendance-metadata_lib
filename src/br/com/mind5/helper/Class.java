@@ -3,7 +3,7 @@ package br.com.mind5.helper;
 public class Class {
 
 	private Long classID;
-	private Long placeID;
+	private Place place;
 
 	public Long getClassID() {
 		return classID;
@@ -13,12 +13,14 @@ public class Class {
 		this.classID = classID;
 	}
 
-	public Long getPlaceID() {
-		return placeID;
+	public Place getPlace() {
+		return place;
 	}
 
-	public void setPlaceID(Long placeID) {
-		this.placeID = placeID;
+	public void setPlace(Place place) {
+		this.place = place;
 	}
+
+
 
 }
