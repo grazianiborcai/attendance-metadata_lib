@@ -1,15 +1,16 @@
 package br.com.mind5.helper;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Enrollment {
 
 	private Long classID;
 	private Long placeID;
-	private People people;
-	private EnrollmentType enrType;
+	private Integer enrTypeID;
 	private LocalDate beginDate;
 	private LocalDate endDate;
+	private ArrayList<People> people = new ArrayList<People>();
 
 	public Long getClassID() {
 		return classID;
@@ -27,26 +28,12 @@ public class Enrollment {
 		this.placeID = placeID;
 	}
 
-	public People getPeople() {
-		if (people != null)
-			return people;
-		else
-			return new People();
+	public Integer getEnrTypeID() {
+		return enrTypeID;
 	}
 
-	public void setPeople(People people) {
-		this.people = people;
-	}
-
-	public EnrollmentType getEnrType() {
-		if (enrType != null)
-			return enrType;
-		else
-			return new EnrollmentType();
-	}
-
-	public void setEnrType(EnrollmentType enrType) {
-		this.enrType = enrType;
+	public void setEnrTypeID(Integer enrTypeID) {
+		this.enrTypeID = enrTypeID;
 	}
 
 	public LocalDate getBeginDate() {
@@ -61,14 +48,19 @@ public class Enrollment {
 	}
 
 	public LocalDate getEndDate() {
-		if (endDate != null)
-			return endDate;
-		else
-			return LocalDate.now();
+		return endDate;
 	}
 
 	public void setEndDate(LocalDate endDate) {
 		this.endDate = endDate;
+	}
+
+	public ArrayList<People> getPeople() {
+		return people;
+	}
+
+	public void setPeople(ArrayList<People> people) {
+		this.people = people;
 	}
 
 }

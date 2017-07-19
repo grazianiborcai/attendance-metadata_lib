@@ -2,14 +2,14 @@ package br.com.mind5.helper;
 
 public class Country {
 
-	private Integer countryID;
+	private String countryID;
 	private String countryDesc;
 
-	public Integer getCountryID() {
+	public String getCountryID() {
 		return countryID;
 	}
 
-	public void setCountryID(Integer countryID) {
+	public void setCountryID(String countryID) {
 		this.countryID = countryID;
 	}
 

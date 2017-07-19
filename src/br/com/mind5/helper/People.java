@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class People {
 
 	private Long peopleID;
-	private Integer countryID;
+	private String countryID;
 	private Region region;
 	private Grade grade;
 	private String name;
@@ -29,6 +29,14 @@ public class People {
 	private String lookingOther;
 	private String password;
 	private Integer enrTypeID;
+	private String regionID;
+	private Integer gradeID;
+	private String birthDateS;
+	private String gradeDateS;
+	private String nextGradeExamS;
+	private Integer genderID;
+	private Integer whereID;
+	private Integer lookID;
 
 	public Long getPeopleID() {
 		return peopleID;
@@ -38,11 +46,11 @@ public class People {
 		this.peopleID = peopleID;
 	}
 
-	public Integer getCountryID() {
+	public String getCountryID() {
 		return countryID;
 	}
 
-	public void setCountryID(Integer countryID) {
+	public void setCountryID(String countryID) {
 		this.countryID = countryID;
 	}
 
@@ -249,6 +257,70 @@ public class People {
 
 	public void setEnrTypeID(Integer enrTypeID) {
 		this.enrTypeID = enrTypeID;
+	}
+
+	public String getRegionID() {
+		return regionID;
+	}
+
+	public void setRegionID(String regionID) {
+		this.regionID = regionID;
+	}
+
+	public Integer getGradeID() {
+		return gradeID;
+	}
+
+	public void setGradeID(Integer gradeID) {
+		this.gradeID = gradeID;
+	}
+
+	public String getBirthDateS() {
+		return birthDateS;
+	}
+
+	public void setBirthDateS(String birthDateS) {
+		this.birthDateS = birthDateS;
+	}
+
+	public String getGradeDateS() {
+		return gradeDateS;
+	}
+
+	public void setGradeDateS(String gradeDateS) {
+		this.gradeDateS = gradeDateS;
+	}
+
+	public String getNextGradeExamS() {
+		return nextGradeExamS;
+	}
+
+	public void setNextGradeExamS(String nextGradeExamS) {
+		this.nextGradeExamS = nextGradeExamS;
+	}
+
+	public Integer getGenderID() {
+		return genderID;
+	}
+
+	public void setGenderID(Integer genderID) {
+		this.genderID = genderID;
+	}
+
+	public Integer getWhereID() {
+		return whereID;
+	}
+
+	public void setWhereID(Integer whereID) {
+		this.whereID = whereID;
+	}
+
+	public Integer getLookID() {
+		return lookID;
+	}
+
+	public void setLookID(Integer lookID) {
+		this.lookID = lookID;
 	}
 
 }
