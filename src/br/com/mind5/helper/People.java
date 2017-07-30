@@ -1,6 +1,7 @@
 package br.com.mind5.helper;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class People {
 
@@ -29,6 +30,9 @@ public class People {
 	private String lookingOther;
 	private String password;
 	private Integer enrTypeID;
+	private String oAuth;
+	private LocalDateTime oAuthDate;
+	private String userAgent;
 	private String regionID;
 	private Integer gradeID;
 	private String birthDateS;
@@ -257,6 +261,30 @@ public class People {
 
 	public void setEnrTypeID(Integer enrTypeID) {
 		this.enrTypeID = enrTypeID;
+	}
+
+	public String getoAuth() {
+		return oAuth;
+	}
+
+	public void setoAuth(String oAuth) {
+		this.oAuth = oAuth;
+	}
+
+	public LocalDateTime getoAuthDate() {
+		return oAuthDate;
+	}
+
+	public void setoAuthDate(LocalDateTime oAuthDate) {
+		this.oAuthDate = oAuthDate;
+	}
+
+	public String getUserAgent() {
+		return userAgent;
+	}
+
+	public void setUserAgent(String userAgent) {
+		this.userAgent = userAgent;
 	}
 
 	public String getRegionID() {
